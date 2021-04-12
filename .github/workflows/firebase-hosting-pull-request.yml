@@ -13,6 +13,6 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ENDAVA_UI_INTERNSHIP_2021 }}'
-          projectId: endava-ui-internship-2021
+          projectId: bookster-6bd51
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
