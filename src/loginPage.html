@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Register</title>
+    <link rel="stylesheet" href="./css/initial.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="section-header">
+            <div class="items-header">
+                <div class="logo-header">
+                    <img src="./images/logoBookster.gif" class="logo-image-header">
+                </div>
+                <div class="details-header">
+                    <p>Bookster</p>
+                    <div class="unlogged-component">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="pure-menu pure-menu-horizontal pure-menu-header">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="index.html" class="pure-menu-link">Home</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="#" class="pure-menu-link">Book details</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="#" class="pure-menu-link">About us</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="#" class="pure-menu-link">Contact us</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <button class="pure-menu-link pure-menu-button-header" onclick="goToPage()">My account</button>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="login-register-section">
+           <div class="forms-container">
+            <form class="pure-form pure-form-aligned">
+                <center><h2> Log in</h2></center>
+                <fieldset>
+                    <div class="pure-control-group fields-form">
+                        <input type="text" id="aligned-name-log" placeholder="Username" />
+                     </div>
+                    <div class="pure-control-group fields-form">
+                        <input type="password" id="aligned-password-log" placeholder="Password" />
+                    </div>
+                    <div class=" fields-form">
+                         <button type="submit" class="pure-menu-link pure-menu-button-header">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+                <form class="pure-form pure-form-aligned">
+                <center><h2> Register</h2></center>
+                <fieldset>
+                    <div class="pure-control-group fields-form">
+                        <input type="text" id="aligned-name-register" placeholder="Username" />
+                    </div>
+                    <div class="pure-control-group fields-form">
+                        <input type="text" id="aligned-password-register" placeholder="Password" />
+                    </div>
+                    <div class="pure-control-group fields-form">
+                        <input type="email" id="aligned-email-register" placeholder="Email Address" />
+                    </div>
+                    
+                    <div class="fields-form">
+                        <button type="submit" class="pure-menu-link pure-menu-button-header">Submit</button>
+                    </div>
+                </fieldset>
+                </form>
+           </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-wrapper">
+            <nav class="pure-menu custom-restricted-width">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#12" class="pure-menu-link overwrite-height-menu-foter">Contact
+                            US</a></li>
+                    <li class="pure-menu-item"><a href="#1" class="pure-menu-link overwrite-height-menu-foter">About
+                            US</a></li>
+                    <li class="pure-menu-item"><a href="#1" class="pure-menu-link overwrite-height-menu-foter">All
+                            Books</a></li>
+                    <li class="pure-menu-item"><a href="#1" class="pure-menu-link overwrite-height-menu-foter">Something
+                            else</a></li>
+                </ul>
+            </nav>
+
+            <div class="copywriting">
+                <h3> &#169; all right reset <a href="#1">Powerpuff Boys</a></h3>
+            </div>
+
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img
+                                src="./images/social media/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img
+                                src="./images/social media/instagram.png" alt="instagram"></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="./images/social media/twitter.png"
+                                alt="twiter"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+<script>
+    function goToPage(){
+    window.location.href = "loginPage.html";
+    //    here we need to check if the user is logged in. If the user is logged in, redirect to his user page. Else, redirect to login/register page.
+    }
+</script>
+</html>

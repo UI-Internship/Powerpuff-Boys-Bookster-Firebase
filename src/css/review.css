@@ -1,0 +1,39 @@
+.reviews-container {
+    margin: auto;
+}
+.reviews-container h2 {
+    border-bottom: 1px solid rgb(54,84,152);
+    text-align: center;
+}
+
+.reviews-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.reviews-box div {
+    background-color:white;
+    padding:10px 20px 10px 20px;
+    box-shadow: 5px 10px 18px rgb(115,148,225);
+    border-radius: 10px;
+    margin: 30px 0 10vw 0;
+    min-height: 200px;
+    overflow-y: hidden;
+}
+
+.reviews-card {
+    width: 220px;
+}
+
+.reviews-card h3 {
+    border-bottom: 1px solid rgb(54,84,152);
+    text-align: center;
+}
+
+.reviews-card p {
+    text-align: justify;
+    padding:10px 20px 10px 20px;
+}

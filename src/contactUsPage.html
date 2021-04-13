@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact us</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/initial.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <section class="section-header">
+            <div class="items-header">
+                <div class="logo-header">
+                    <img src="./images/logoBookster.gif" class="logo-image-header">
+                </div>
+                <div class="details-header">
+                    <p>Bookster</p>
+                    <div class="unlogged-component">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="pure-menu pure-menu-horizontal pure-menu-header">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="index.html" class="pure-menu-link">Home</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="#" class="pure-menu-link">Book details</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="#" class="pure-menu-link">About us</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="#" class="pure-menu-link">Contact us</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <button class="pure-menu-link pure-menu-button-header" onclick="goToPage()">My account</button>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="contact-us-container">
+            <div class="contact-us-form-container">
+                <h2 >HOW CAN WE HELP YOU?</h2>
+                <p>For service requests or any other type of inquiry, send us your message and we will get back soon.</p>
+                <form class="pure-form contact-item">
+                        <input type="text" class="pure-input-1 element-contact" placeholder="First name" />
+                        <input type="text" class="pure-input-1 element-contact" placeholder="Last name" />
+                        <input type="email" class="pure-input-1 element-contact" placeholder="Email" />
+                        <input type="text" class="pure-input-1 element-contact" placeholder="Phone" />
+                        <textarea class="pure-input-1 element-contact-text" placeholder="Message"></textarea>
+                        <select id="choose-reason" class="pure-input-1 element-contact">
+                            <option value="" disabled selected hidden>Please choose your reason...</option>
+                            <option>Business Inquiry</option>
+                            <option>Sponsorship</option>
+                            <option>Career Opportunities</option>
+                            <option>Other</option>
+                        </select>
+                        <select id="choose-source" class="pure-input-1 element-contact" >
+                            <option value="" disabled selected hidden>How did you hear about us?</option>
+                            <option>Event</option>
+                            <option>Social Media</option>
+                            <option>LinkedIn</option>
+                            <option>Other</option>
+                        </select>
+                        <label><input type="checkbox" id="multi-contact" /> I agree to be contacted by Bookster representatives via email or phone</label>
+                        <button type="submit" class="pure-button pure-input-1-2 pure-button-primary button-send-message">Send message</button>
+                </form>
+            </div>
+            <div class="contact-us-second-container">
+                <h3 id="head-contact">Contact</h3>
+                <p>T: 0372 363 282</p>
+                <h3>Address</h3>
+                <p>Strada Alexandru Vaida Voevod 51, Cluj-Napoca 400592</p>
+            </div>
+        </section>
+        <section class="centers-container">
+            <!-- this section is dedicated to present our centers contact information -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <nav class="pure-menu custom-restricted-width">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#12" class="pure-menu-link overwrite-height-menu-foter">Contact
+                            US</a></li>
+                    <li class="pure-menu-item"><a href="#1" class="pure-menu-link overwrite-height-menu-foter">About
+                            US</a></li>
+                    <li class="pure-menu-item"><a href="#1" class="pure-menu-link overwrite-height-menu-foter">All
+                            Books</a></li>
+                    <li class="pure-menu-item"><a href="#1" class="pure-menu-link overwrite-height-menu-foter">Something
+                            else</a></li>
+                </ul>
+            </nav>
+
+            <div class="copywriting">
+                <h3> &#169; all right reset <a href="#1">Powerpuff Boys</a></h3>
+            </div>
+
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img
+                                src="./images/social media/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img
+                                src="./images/social media/instagram.png" alt="instagram"></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="./images/social media/twitter.png"
+                                alt="twiter"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

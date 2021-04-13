@@ -1,0 +1,64 @@
+header{
+    height: 200px;
+    text-align: center;
+    background-color: rgb(235, 104, 130);
+}
+
+main{
+    width: 900px;
+    margin:0 auto;
+}
+.our-moto{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(161,187,247,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.our-moto h2{
+    padding: 30px;
+}
+
+.our-moto p{
+    width: 400px;
+    margin: 0 auto;
+    font-size: 1.4em;
+    padding-bottom:40px;
+}
+
+.out-team{
+    margin-top: 100px;
+}
+
+article{
+    height: 350px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: 20px 0;
+}
+
+article img{
+    display: block;
+    width: 250px;
+}
+
+
+
+.shadow1{
+    -webkit-box-shadow: 43px 0px 50px -7px rgba(79,113,191,0.75); 
+    box-shadow: 43px 0px 50px -7px rgba(79,113,191,0.75);
+}
+.shadow2{
+    -webkit-box-shadow: -43px 0px 50px -7px rgba(79,113,191,0.75); 
+    box-shadow: -43px 0px 50px -7px rgba(79,113,191,0.75);
+}
+
+h2{
+    text-align: center;
+}
+
+footer{
+    height: 200px;
+    text-align: center;
+    background-color: rgb(235, 104, 130);
+}

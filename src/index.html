@@ -2,60 +2,217 @@
 <html lang="en">
 
 <head>
+    <title>Home page</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
-        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./css/initial.css" type="text/css">
+     <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <nav class="pure-menu pure-menu-horizontal">
-        <div>
-            <a href="/" class="pure-menu-heading pure-menu-link">Potato Page</a>
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item">
-                    <a href="./pages/example-page-1/example-page-1.html" class="pure-menu-link">Page 1 example</a>
-                </li>
-                <li class="pure-menu-item">
-                    <a href="./pages/example-page-1/example-page-1.html" class="pure-menu-link">Page 2 example</a>
-                </li>
-            </ul>
+    <header>
+        <section class="section-header">
+            <div class="items-header">
+                <div class="logo-header">
+                    <img src="./images/logoBookster.gif" class="logo-image-header">
+                </div>
+                <div class="details-header">
+                    <p>Bookster</p>
+                    <div class="unlogged-component">
+
+                    </div>
+                </div>
+            </div>
+            <nav class="pure-menu pure-menu-horizontal pure-menu-header">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="#" class="pure-menu-link">Home</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="#" class="pure-menu-link">Book details</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="#" class="pure-menu-link">About us</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <a href="#" class="pure-menu-link">Contact us</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-item-header">
+                        <button class="pure-menu-link pure-menu-button-header" onclick="goToPage()">My account</button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="main-width">
+        <section class="slide-show-container">
+            <h2>Reasons You Should Read More Books</h2>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="./images/slide_show/book1.png">
+                    <div class="slide-show-ul">
+                        <ul>
+                            <li>Reading makes you smarter</li>
+                            <li>Reading reduces stress</li>
+                            <li>Reading improves you memory</li>
+                            <li>It improves your imagination</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img style="width: 270px;" src="./images/slide_show/book2.png">
+                    <div class="slide-show-ul">
+                        <ul>
+                            <li>Reading makes you smarter</li>
+                            <li>Reading reduces stress</li>
+                            <li>Reading improves you memory</li>
+                            <li>It improves your imagination</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <div style="text-align:center; margin-top:10px;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </section>
+
+        <div class="portfolio">
+            <h2>Last Aparations</h2>
+            <div class="portfolio-wrapper">
+                <article class="item">
+                    <img src="./images/books/book-cover.png" alt="book image cover">
+                    <h3 class="item-title">Book Title</h3>
+                    <p class="item-price">Price: <del>43.33</del> <ins>27.33</ins></p>
+                    <p class="item-rating">Rating: 5/7 &#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <div class="item-actions">
+                        <button class="item-rent">Rent</button>
+                        <button class="item-favourite"> &#10084; </button>
+                        <!-- <button class="item-favourite2"> &#9825; </button> -->
+                    </div>
+                </article>
+
+                <article class="item">
+                    <img src="./images/books/book-cover.png" alt="book image cover">
+                    <h3 class="item-title">Book Title</h3>
+                    <p class="item-price">Price: <del>43.33</del> <ins>27.33</ins></p>
+                    <p class="item-rating">Rating: 5/7 &#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <div class="item-actions">
+                        <button class="item-rent">Rent</button>
+                        <button class="item-favourite"> &#9825; </button>
+                        <!-- <button class="item-favourite2"> &#9825; </button> -->
+                    </div>
+                </article>
+
+                <article class="item">
+                    <img src="./images/books/book-cover.png" alt="book image cover">
+                    <h3 class="item-title">Book Title</h3>
+                    <p class="item-price">Price: <del>43.33</del> <ins>27.33</ins></p>
+                    <p class="item-rating">Rating: 5/7 &#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <div class="item-actions">
+                        <button class="item-rent">Rent</button>
+                        <button class="item-favourite"> &#9825; </button>
+                        <!-- <button class="item-favourite2"> &#9825; </button> -->
+                    </div>
+                </article>
+
+                <article class="item">
+                    <img src="./images/books/book-cover.png" alt="book image cover">
+                    <h3 class="item-title">Book Title</h3>
+                    <p class="item-price">Price: <del>43.33</del> <ins>27.33</ins></p>
+                    <p class="item-rating">Rating: 5/7 &#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                    <div class="item-actions">
+                        <button class="item-rent">Rent</button>
+                        <button class="item-favourite"> &#10084; </button>
+                        <!-- <button class="item-favourite2"> &#9825; </button> -->
+                    </div>
+                </article>
+
+            </div>
         </div>
-        <button type="button" id="signout" class="button-warning pure-button">Sign Out</button>
-    </nav>
 
-    <div class="container">
-        <form class="add-new-items-form pure-form">
-            <fieldset>
-                <legend>Add new items<legend>
-                        <input class="item-title" type="text" placeholder="Title" />
-                        <input class="item-value" type="text" placeholder="Value" />
-                        <button type="submit" class="add-new-item pure-button pure-button-primary">Add new</button>
-            </fieldset>
-        </form>
-    </div>
+        <section class="reviews-container">
+            <h2>Our Reviews</h2>
+            <div class="reviews-box">
+                <div class="reviews-card">
+                    <h3>James Bond's review:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellat dolorum non, tenetur ratione quae odit. Facere
+                        quas magnam quia sint.</p>
+                </div>
+                <div class="reviews-card">
+                    <h3>James Bond's review:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellat dolorum non, tenetur ratione quae odit. Facere
+                        quas magnam quia sint.</p>
+                </div>
+                <div class="reviews-card">
+                    <h3>James Bond's review:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellat dolorum non, tenetur ratione quae odit. Facere
+                        quas magnam quia.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <div class="container">
-        <table style="width: 100%" class="example-table pure-table pure-table-horizontal">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Column 1</th>
-                    <th>Column 2</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <td colspan="100%" style="text-align: center;">Loading...</td>
-            </tbody>
-        </table>
-    </div>
 
-    <!-- Main app -->
+    <footer>
+        <div class="footer-wrapper">
+            <nav class="pure-menu custom-restricted-width">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#12" class="pure-menu-link overwrite-height-menu-foter">Contact
+                            US</a></li>
+                    <li class="pure-menu-item"><a href="#1" class="pure-menu-link overwrite-height-menu-foter">About
+                            US</a></li>
+                    <li class="pure-menu-item"><a href="#1" class="pure-menu-link overwrite-height-menu-foter">All
+                            Books</a></li>
+                    <li class="pure-menu-item"><a href="#1" class="pure-menu-link overwrite-height-menu-foter">Something
+                            else</a></li>
+                </ul>
+            </nav>
+
+            <div class="copywriting">
+                <h3> &#169; all right reset <a href="#1">Powerpuff Boys</a></h3>
+            </div>
+
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img
+                                src="./images/social media/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img
+                                src="./images/social media/instagram.png" alt="instagram"></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="./images/social media/twitter.png"
+                                alt="twiter"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/slide.js"></script>
     <script src="./index.js"></script>
 </body>
+
+<script>
+    function goToPage() {
+        window.location.href = "loginPage.html";
+        //    here we need to check if the user is logged in. If the user is logged in, redirect to his user page. Else, redirect to login/register page.
+    }
+</script>
 
 </html>
