@@ -1,6 +1,6 @@
 import db from "database";
 
-const collectionRef = db.collection("EXAMPLE_COLLECTION");
+const collectionRef = db.collection("sergiu_test");
 const container = document.querySelector(".example-table tbody");
 
 function deleteItem(event) {
